@@ -3,6 +3,29 @@
 ## Introduction: My Journey to Software Engineering
 My academic career at Southern New Hampshire University has been more than just a series of classes; it has been a journey of understanding where my abilities and interests intersect with the discipline of computer science. Early in the program, I experimented with a few technological topics, but with time, I grew particularly interested in backend systems and database administration. Programming, databases, security, testing, and software design were all integrated into coherent learning experiences through my projects. My technical skills and critical thinking were enhanced by these obstacles. My development and the skills I now use in my professional work are reflected in my portfolio.
 
+## Artifact Overview
+All three enhancements to my ePortfolio are based on the Animal Shelter Dashboard from CS 340 (Advanced Programming Concepts). Each improvement aims to achieve a different program objective and showcases a different aspect of my computer science talents.
+
+1. Software Design & Engineering Enhancement:
+   a. Artifact: Animal Shelter Dashboard (CS 340)
+   b. Focus: A single Jupyter Notebook was transformed into an MVC architecture, complete with strong logging, input                 validation, and secured credential storage.
+   c. Skills Demonstrated: Professional documentation, separation of concerns, PEP 8 compliance, and modular design
+   d. Course Outcome: #4 (well-founded techniques) and #5 (security mindset)
+   
+2. Algorithms & Data Structures Enhancement:
+   a. Artifact: Animal Shelter Dashboard (CS 340)
+   b. Focus: Integrated server-side pagination, B-tree indexing, and LRU caching, resulting in demonstrated Big O                    performance benefits.
+   c. Skills Demonstrated: Analyzing algorithmic efficiency, adjusting performance, selecting key data structures, and                             refining database queries.
+   d. Course Outcome: #3 (algorithmic principles) and #4 (well-founded techniques)
+   
+3. Database Enhancement:
+   a. Artifact: Animal Shelter Dashboard (CS 340)
+   b. Focus: Implemented schema validation, audit trails, and MongoDB aggregation pipelines.
+   c. Skills Demonstrated: Data integrity enforcement, audit trail architecture, server-side analytics, and TTL indexes
+   d. Course Outcome: #4 (well-founded techniques) and #5 (security mindset)
+
+These three improvements design (Software Engineering), optimization (Algorithms), and security (Databases) showcase a whole software development lifecycle. They demonstrate my ability to create, enhance, and safeguard data-driven applications exactly the abilities needed for backend and data engineering positions. Through this well-organized portfolio, employers may view my real code, read my reflections, and comprehend my development as a developer.
+
 ## The Code Review Process
 
 My upgrade approach began with a comprehensive code examination of the original Animal Shelter Dashboard, which is shown in a video linked to my ePortfolio. This tour reviews the application's current state, finds weaknesses in structure, performance, security, and documentation, and outlines the precise changes I want to make in each category. This careful review revealed technical debt that required attention: hardcoded secrets, closely linked logic, inadequate logging, expensive database queries, and missing input checks. The code review provided the foundation for all subsequent changes, showcasing my ability to objectively analyze current systems and plot intentional, significant improvement paths. The video is accessible at: https://youtu.be/rep2oc2STIE
