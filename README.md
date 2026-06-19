@@ -10,19 +10,19 @@ All three enhancements to my ePortfolio are based on the Animal Shelter Dashboar
    1. Artifact: Animal Shelter Dashboard (CS 340)
    2. Focus: A single Jupyter Notebook was transformed into an MVC architecture, complete with strong logging, input                 validation, and secured credential storage.
    3. Skills Demonstrated: Professional documentation, separation of concerns, PEP 8 compliance, and modular design
-   3. Course Outcome: #4 (well-founded techniques) and #5 (security mindset)
+   4. Course Outcome: #4 (well-founded techniques) and #5 (security mindset)
    
 2. Algorithms & Data Structures Enhancement:
-   a. Artifact: Animal Shelter Dashboard (CS 340)
-   b. Focus: Integrated server-side pagination, B-tree indexing, and LRU caching, resulting in demonstrated Big O                    performance benefits.
-   c. Skills Demonstrated: Analyzing algorithmic efficiency, adjusting performance, selecting key data structures, and                             refining database queries.
-   d. Course Outcome: #3 (algorithmic principles) and #4 (well-founded techniques)
+   1. Artifact: Animal Shelter Dashboard (CS 340)
+   2. Focus: Integrated server-side pagination, B-tree indexing, and LRU caching, resulting in demonstrated Big O                    performance benefits.
+   3. Skills Demonstrated: Analyzing algorithmic efficiency, adjusting performance, selecting key data structures, and                             refining database queries.
+   4. Course Outcome: #3 (algorithmic principles) and #4 (well-founded techniques)
    
 3. Database Enhancement:
-   a. Artifact: Animal Shelter Dashboard (CS 340)
-   b. Focus: Implemented schema validation, audit trails, and MongoDB aggregation pipelines.
-   c. Skills Demonstrated: Data integrity enforcement, audit trail architecture, server-side analytics, and TTL indexes
-   d. Course Outcome: #4 (well-founded techniques) and #5 (security mindset)
+   1. Artifact: Animal Shelter Dashboard (CS 340)
+   2. Focus: Implemented schema validation, audit trails, and MongoDB aggregation pipelines.
+   3. Skills Demonstrated: Data integrity enforcement, audit trail architecture, server-side analytics, and TTL indexes
+   4. Course Outcome: #4 (well-founded techniques) and #5 (security mindset)
 
 These three improvements design (Software Engineering), optimization (Algorithms), and security (Databases) showcase a whole software development lifecycle. They demonstrate my ability to create, enhance, and safeguard data-driven applications exactly the abilities needed for backend and data engineering positions. Through this well-organized portfolio, employers may view my real code, read my reflections, and comprehend my development as a developer.
 
