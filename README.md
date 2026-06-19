@@ -6,19 +6,19 @@ My academic career at Southern New Hampshire University has been more than just 
 ## Artifact Overview
 All three enhancements to my ePortfolio are based on the Animal Shelter Dashboard from CS 340 (Advanced Programming Concepts). Each improvement aims to achieve a different program objective and showcases a different aspect of my computer science talents.
 
-1. Software Design & Engineering Enhancement:
+**1. Software Design & Engineering Enhancement:**
    a. Artifact: Animal Shelter Dashboard (CS 340)
    b. Focus: A single Jupyter Notebook was transformed into an MVC architecture, complete with strong logging, input                 validation, and secured credential storage.
    c. Skills Demonstrated: Professional documentation, separation of concerns, PEP 8 compliance, and modular design
    d. Course Outcome: #4 (well-founded techniques) and #5 (security mindset)
    
-2. Algorithms & Data Structures Enhancement:
+**2. Algorithms & Data Structures Enhancement:**
    a. Artifact: Animal Shelter Dashboard (CS 340)
    b. Focus: Integrated server-side pagination, B-tree indexing, and LRU caching, resulting in demonstrated Big O                    performance benefits.
    c. Skills Demonstrated: Analyzing algorithmic efficiency, adjusting performance, selecting key data structures, and                             refining database queries.
    d. Course Outcome: #3 (algorithmic principles) and #4 (well-founded techniques)
    
-3. Database Enhancement:
+**3. Database Enhancement:**
    a. Artifact: Animal Shelter Dashboard (CS 340)
    b. Focus: Implemented schema validation, audit trails, and MongoDB aggregation pipelines.
    c. Skills Demonstrated: Data integrity enforcement, audit trail architecture, server-side analytics, and TTL indexes
