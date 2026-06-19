@@ -1,87 +1,42 @@
 # Professional Self Assessment
 ## CS 499 Capstone - Southern New Hampshire University
 
-## Introduction ##
-My journey through the Computer Science program at Southern New Hampshire University has been transformative, shaping me from a general software enthusiast into a focused backend and data engineer. This self-assessment serves as an introduction to my skills, experiences, and career aspirations, demonstrating how my coursework and ePortfolio enhancements have prepared me for a professional career in computer science.
+## Introduction: My Journey to Backend Engineering ##
 
-## Coursework and ePortfolio Impact ##
-Completing my coursework throughout the program and developing this ePortfolio has helped me showcase my strengths in several ways. First, the program's curriculum provided a strong foundation in programming logic, object-oriented design, data structures, algorithms, and database management. I gained hands-on experience with Python, Java, MongoDB, SQL, and full-stack development through courses like CS 340 (Advanced Programming Concepts), CS 260 (Data Structures and Algorithms), and DAD 220 (Introduction to SQL).
+My journey through the Computer Science program at Southern New Hampshire University has been transformative, evolving from a general interest in technology into a focused passion for backend and data engineering. Throughout the program, I developed skills across software development, databases, security, testing, user experience design, and system architecture. Courses such as CS 210, CS 250, CS 320, CS 340, CS 405, CS 410, and DAD 220 each contributed unique perspectives that strengthened my technical foundation. This self-assessment serves as an introduction to my skills, experiences, and career aspirations, demonstrating how my coursework and ePortfolio enhancements have prepared me for a professional career in computer science. While the Animal Shelter Dashboard serves as the primary artifact in this portfolio, other coursework also contributed significantly to my development, and I reference those experiences throughout this assessment.
 
-Second, the ePortfolio development process forced me to revisit and critically evaluate my previous work. I identified weaknesses in my original CS 340 project—hardcoded credentials, lack of modularity, missing documentation, and inefficient algorithms—and systematically addressed each issue. This reflective practice taught me to view my code through an employer's lens, asking "Does this demonstrate professional-quality work?"
+###### Software Engineering and Database Integration ######
 
-Third, the capstone project helped shape my professional goals and values. I discovered that I am most engaged when building scalable, data-driven applications that solve real problems. I also learned to value code quality, documentation, security, and user experience as essential components of professional software development.
+My expertise in software engineering and database integration developed through a combination of coursework and hands-on projects. Courses like CS 340 (Advanced Programming Concepts) and DAD 220 (Introduction to SQL) provided the foundation for building data-driven applications. I learned to design database schemas, write complex queries, and integrate databases with application code using Python and MongoDB. In DAD 220, I gained proficiency in SQL, learning to write complex queries, manage relational databases, and ensure data integrity. This foundation was critical when I later worked with MongoDB in CS 340, as I understood the importance of data modeling and query optimization regardless of the database type.
 
-## Collaboration in Team Environments ##
-Throughout the program, I developed strategies for building collaborative environments. In CS 250 (Software Development Lifecycle), I participated in Agile/Scrum simulations, attending daily stand-ups, sprint planning, and retrospectives. I learned to write user stories, estimate story points, and collaborate with team members to deliver working software incrementally.
+The capstone project was instrumental in solidifying these skills. When I revisited my CS 340 Animal Shelter Dashboard, I identified significant weaknesses: hardcoded credentials, monolithic code structure, minimal error handling, and no logging. I systematically addressed each issue, transforming the original Jupyter Notebook into a modular MVC architecture with separate Model, View, and Controller components. I implemented Python's logging module, added comprehensive input validation, and moved sensitive credentials to environment variables using python-dotenv.
 
-In CS 320 (Software Testing, Automation, and Quality Assurance), I worked with peers to review code and provide constructive feedback. I learned to write clear bug reports, suggest improvements respectfully, and incorporate feedback from others. These experiences taught me that successful software development requires effective communication, mutual respect, and shared accountability.
+Throughout the enhancement process, I applied schema validation to improve data integrity and security. I implemented JSON Schema validation that enforces required fields (name, breed, age_upon_outcome_in_weeks), data types, and value ranges. I also created an audit logging collection that tracks every CREATE, UPDATE, DELETE, and READ operation with timestamp, action, user, and query details. This enables forensic analysis and compliance with data governance requirements, directly supporting Course Outcome #5 (security mindset).
 
-For example, during a team project, I collaborated with three classmates to build a web application. We used GitHub for version control, conducted code reviews for each pull request, and held weekly check-ins to track progress. I learned to resolve merge conflicts, articulate my technical decisions, and compromise when team members had different approaches.
+Cache invalidation proved to be a critical lesson in data consistency. When I initially implemented caching, I stored results indefinitely, which meant database updates never appeared on the dashboard. I learned to clear the cache after every create, update, or delete operation, ensuring users always see current data. This experience taught me that robust software requires careful consideration of how data flows through the system.
 
-## Communicating with Stakeholders ##
+## Algorithms and Data Structures
 
-I developed professional communication skills across multiple formats: written, oral, and visual. I learned to adapt my communication style based on audience and context, a skill essential for working with diverse stakeholders.
+My understanding of algorithms and data structures matured through courses like CS 260 (Data Structures and Algorithms) and was applied extensively in the capstone. I learned to analyze algorithm efficiency using Big O notation and select appropriate data structures for specific problems. In CS 260, I studied fundamental data structures—arrays, linked lists, stacks, queues, trees, and hash maps—and learned to evaluate their trade-offs in different contexts. This theoretical foundation prepared me to make informed design decisions in the capstone.
 
-Written Communication: I wrote technical documentation, system design documents, and user guides in courses like CS 250 and CS 340. My code review narratives in this capstone demonstrate my ability to explain technical concepts clearly to instructors and potential employers.
+In the Animal Shelter project, I identified three algorithmic inefficiencies: loading all records into memory at once (O(n) memory), performing full collection scans for every query (O(n) time), and executing identical queries repeatedly without caching. I systematically addressed each issue.
 
-Oral Communication: I presented project findings in CS 330 and delivered my code review video in this capstone. I learned to organize my thoughts, speak clearly, and use visual aids effectively.
+First, I implemented server-side pagination using MongoDB's skip() and limit() operators, reducing memory complexity from O(n) to O(page_size). For a dataset of 10,000 records with page_size=50, this represents a significant reduction in memory usage. Second, I created B-tree indexes on breed, age, and a compound index on both fields together. B-tree indexes are fundamental to query optimization in database systems, transforming linear-time full collection scans into logarithmic-time index lookups. Third, I implemented LRU caching using Python's functools.lru_cache with maxsize=128, enabling constant-time retrieval for repeated queries.
 
-Visual Communication: I created UML diagrams in IT 315, data visualizations in CS 340, and designed my ePortfolio using GitHub Pages. I learned to present complex information in accessible, visually appealing formats.
+To validate these theoretical improvements, I benchmarked actual execution times. Empirical measurements confirmed the improvements: page loads are substantially faster than loading all records, and cache hits are significantly faster than cache misses. These results demonstrate my ability to design and evaluate computing solutions using algorithmic principles and manage trade-offs involved in design choices (Course Outcome #3).
 
-For example, when explaining my pagination enhancement, I created a flowchart illustrating the before-and-after memory complexity, helping stakeholders understand why the improvement mattered.
+## Communication, Collaboration, and Security
 
-## Data Structures and Algorithms ##
+Professional communication and collaboration are essential skills I developed throughout the program. Working in collaborative environments taught me the importance of clear communication, accountability, and feedback. In CS 250 (Software Development Lifecycle), I participated in Agile/Scrum simulations, attending daily stand-ups, sprint planning, and retrospectives. I learned to write user stories, estimate story points, and collaborate with team members to deliver working software incrementally. Through Agile exercises, peer reviews, and project discussions, I learned how software teams coordinate requirements, prioritize tasks, and deliver solutions that meet stakeholder needs.
 
-My understanding of data structures and algorithms developed progressively throughout the program. In CS 260, I studied fundamental data structures—arrays, linked lists, stacks, queues, trees, and hash maps—and learned to analyze algorithm efficiency using Big O notation.
+In CS 320 (Software Testing, Automation, and Quality Assurance), I worked with peers to review code and provide constructive feedback. I learned to write clear bug reports, suggest improvements respectfully, and incorporate feedback from others. These experiences taught me that successful software development requires effective communication, mutual respect, and shared accountability. For example, during a team project, I collaborated with classmates to build a web application, using GitHub for version control and conducting code reviews for each pull request.
 
-I applied this knowledge in my capstone when enhancing the Animal Shelter project. I recognized that the original read() method loaded all records into memory at once, creating O(n) memory complexity. I implemented server-side pagination to reduce memory usage to O(page_size), demonstrating my ability to evaluate algorithmic trade-offs and choose appropriate data structures.
+Throughout the program, I learned to communicate technical concepts to both technical and nontechnical audiences. Whether documenting requirements, presenting designs, conducting code reviews, or writing project narratives, I adapted communication styles to support stakeholder decision-making. My capstone code review video and written narratives demonstrate my ability to communicate technical concepts clearly to diverse audiences. I adapted my communication style based on context—explaining code walkthroughs to peers in the video and providing detailed written reflections in the narratives. This supports Course Outcome #2 (professional-quality communications).
 
-I also created B-tree indexes in MongoDB, transforming query time from O(n) full collection scans to O(log n) logarithmic lookups. I implemented LRU caching using Python's functools.lru_cache, enabling O(1) retrieval for repeated queries. These enhancements demonstrate my ability to design and evaluate computing solutions using algorithmic principles (Course Outcome #3).
+Developing a security mindset has been a key focus throughout the program. In CS 405 (Secure Coding) and CS 340, I learned to anticipate adversarial exploits, identify vulnerabilities, and implement mitigations. I identified and remediated hardcoded credentials in my original project, moved them to a .env file, added input validation to prevent injection attacks, and blocked empty delete queries. I also implemented schema validation and audit logging to maintain data integrity and enable forensic analysis. These enhancements demonstrate my security mindset (Course Outcome #5).
 
-According to MongoDB (2024), B-tree indexes are fundamental to query optimization in database systems. I applied this industry-standard technique to improve performance, showing my ability to use well-founded techniques in computing practices (Course Outcome #4).
+## Conclusion: A Cohesive Portfolio
 
-## Software Engineering and Databases ##
+My ePortfolio demonstrates the full range of my computer science abilities through three interconnected enhancements to the Animal Shelter Dashboard. Software engineering shows I can create maintainable code with MVC architecture and secure credential management. Algorithms and data structures show I can optimize performance using B-tree indexing, pagination, and LRU caching. Databases show I can secure data with schema validation and audit logging.
 
-My software engineering skills matured through courses like CS 340 and CS 250. I learned the software development lifecycle, from requirements gathering to design, implementation, testing, and deployment.
-
-Software Engineering: I demonstrated my software engineering abilities in Milestone Two by refactoring a monolithic Jupyter Notebook into a modular MVC architecture. I separated concerns into Model, View, and Controller components, added comprehensive docstrings, implemented logging, and moved hardcoded credentials to environment variables. This enhancement showcases my ability to create industry-standard software designs and deliver value through clean, maintainable code.
-
-Databases: In Milestone Four, I implemented MongoDB schema validation to enforce data integrity, created an audit logging collection with TTL indexes for security and compliance, and built aggregation pipelines for server-side analytics. These enhancements demonstrate my ability to use database tools and techniques professionally.
-
-My database work directly supports Course Outcome #5 (security mindset). I recognized that hardcoded credentials were a critical vulnerability and remediated them. I also implemented audit logging to track data modifications, enabling forensic analysis if unauthorized changes occur. According to the Python Software Foundation (2024), cache invalidation is critical for data consistency, a lesson I learned when implementing LRU caching.
-
-## Security Mindset ##
-
-Developing a security mindset has been a key focus throughout the program. In CS 405 (Secure Coding) and CS 340, I learned to anticipate adversarial exploits, identify vulnerabilities, and implement mitigations.
-
-Credential Management: In my original CS 340 project, I hardcoded database credentials in the Jupyter Notebook. Anyone with access to the notebook could see the password. In Milestone Two, I moved credentials to a .env file excluded from version control, following industry best practices.
-
-Input Validation: The original create() method accepted any data without validation. I added explicit checks to ensure data is a non-empty dictionary before insertion, preventing injection attacks and data corruption.
-
-Audit Logging: In Milestone Four, I created an audit log collection that tracks every CREATE, UPDATE, DELETE, and READ operation with timestamp, action, user, and query details. This enables forensic analysis and compliance with data governance requirements.
-
-Defensive Programming: I blocked empty delete queries, preventing accidental deletion of all documents. I also added validation for age ranges, geographic coordinates, and required fields using JSON Schema.
-
-According to MongoDB (2024), schema validation is essential for maintaining data quality and preventing security issues. I applied this principle throughout my database enhancements.
-
-## Summary: How the Artifacts Fit Together ##
-
-My ePortfolio demonstrates the full range of my computer science abilities through three interconnected enhancements to the Animal Shelter Dashboard:
-
-Software Design and Engineering shows I can create professional, maintainable code by applying MVC architecture, logging, and secure credential management. This enhancement demonstrates my ability to design and implement industry-standard software solutions (Course Outcome #4).
-
-Algorithms and Data Structures shows I can optimize performance by analyzing time and space complexity, implementing B-tree indexes, and using LRU caching. This enhancement demonstrates my ability to evaluate algorithmic trade-offs and improve efficiency (Course Outcome #3).
-
-Databases shows I can secure and optimize data by implementing schema validation, audit logging, and aggregation pipelines. This enhancement demonstrates my security mindset and database expertise (Course Outcome #5).
-
-Together, these enhancements show a developer who can build, optimize, and secure data-driven applications. The code review video demonstrates my communication skills (Course Outcome #2), and the self-assessment demonstrates my collaborative abilities (Course Outcome #1).
-
-My career specialization is backend and data engineering, and this portfolio provides tangible evidence of my skills. Employers can see my actual code, read my reflections, and understand my growth as a developer.
-
-###### References
-
-MongoDB, Inc. (2024). Indexes in MongoDB. MongoDB Documentation. https://docs.mongodb.com/manual/indexes/
-
-Python Software Foundation. (2024). functools — Higher-order functions and operations on callable objects. Python Documentation. https://docs.python.org/3/library/functools.html
-
-U.S. Bureau of Labor Statistics. (2024). Occupational Outlook Handbook: Software Developers, Quality Assurance Analysts, and Testers. https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm
+Together, these enhancements demonstrate a developer who can build, optimize, and secure data-driven applications—precisely the skills required for backend and data engineering roles. My career specialization is backend engineering, and this portfolio provides tangible evidence of my readiness. Employers can see my actual code, read my reflections, and understand my growth as a developer. The Computer Science program has prepared me well for this path, and I am excited to contribute to the field.
