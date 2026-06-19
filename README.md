@@ -1,7 +1,6 @@
-# Professional Self Assessment
-## CS 499 Capstone - Southern New Hampshire University
-
-## Introduction: My Journey to Backend Engineering
+# Software Engineering ePortfolio
+## Professional Self Assessment
+## Introduction: My Journey to Software Engineering
 My academic career at Southern New Hampshire University has been more than just a series of classes; it has been a journey of understanding where my abilities and interests intersect with the discipline of computer science. Early in the program, I experimented with a few technological topics, but with time, I grew particularly interested in backend systems and database administration. Programming, databases, security, testing, and software design were all integrated into coherent learning experiences through my projects. My technical skills and critical thinking were enhanced by these obstacles. My development and the skills I now use in my professional work are reflected in my portfolio.
 
 ## The Code Review Process
@@ -41,6 +40,10 @@ My ePortfolio is anchored by the Animal Shelter Dashboard improvements, each of 
 The code review video demonstrates my abilities to evaluate existing systems and offer important enhancements with foresight. When paired with the subsequent refinements and narrative comments, these aspects represent my whole development arc, which progresses methodically from critical evaluation to careful design to executable solutions.
 
 This portfolio offers concrete evidence of my development as a developer who strikes a balance between security, dependability, and performance elements crucial to backend programming. To assess my skills and level of professional development, potential employers can go at my work and reflections. After completing this program, I feel well-prepared and truly eager to create safe, scalable solutions that address actual industry issues.
+
+## Contact
+###### E-mail:###### mk.sikdar1984@gmail.com
+
 
 
 
