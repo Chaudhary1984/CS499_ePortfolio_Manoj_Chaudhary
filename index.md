@@ -1,6 +1,4 @@
 # Professional Self Assessment
-## CS 499 Capstone - Southern New Hampshire University
-
 ## Introduction: My Journey to Backend Engineering
 My academic career at Southern New Hampshire University has been more than just a series of classes; it has been a journey of understanding where my abilities and interests intersect with the discipline of computer science. Early in the program, I experimented with a few technological topics, but with time, I grew particularly interested in backend systems and database administration. Programming, databases, security, testing, and software design were all integrated into coherent learning experiences through my projects. My technical skills and critical thinking were enhanced by these obstacles. My development and the skills I now use in my professional work are reflected in my portfolio.
 
