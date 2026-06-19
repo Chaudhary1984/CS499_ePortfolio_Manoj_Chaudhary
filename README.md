@@ -42,7 +42,8 @@ The code review video demonstrates my abilities to evaluate existing systems and
 This portfolio offers concrete evidence of my development as a developer who strikes a balance between security, dependability, and performance elements crucial to backend programming. To assess my skills and level of professional development, potential employers can go at my work and reflections. After completing this program, I feel well-prepared and truly eager to create safe, scalable solutions that address actual industry issues.
 
 ## Contact
-###### E-mail:###### mk.sikdar1984@gmail.com
+###### Manoj Chaudhary
+###### E-mail: mk.sikdar1984@gmail.com
 
 
 
